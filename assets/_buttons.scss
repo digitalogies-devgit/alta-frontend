@@ -1,0 +1,62 @@
+.btn {
+  font-size: 20px;
+  padding: 14px 30px;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 30px;
+  transition: .3s;
+  font-weight: 700;
+  position: relative;
+  max-width: fit-content;
+  font-family: "Neueplak-Text-Bold", sans-serif;
+  &:hover {
+    filter: brightness(.9);
+    &::before {
+      transform: translate(6px, -50%);
+    }
+  }
+  &.btn-sm {
+    padding: 12px 18px;
+    font-size: 14px;
+    transition: .3s;
+  }
+}
+
+.btn-primary {
+  color: white;
+  background-color: var(--primary);
+  position: relative;
+}
+
+.btn-outline {
+  color: var(--gray);
+  border: 1px solid var(--gray);
+  &:hover {
+    color: white;
+    &::before {
+      filter: unset;
+    }
+  }
+  &::before {
+    filter: invert(1);
+  }
+}
+
+@media (max-width: 576px) {
+  .btn {
+    font-size: 18px;
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .btn {
+    font-size: 16px;
+    padding: 10px 16px;
+  }
+}
