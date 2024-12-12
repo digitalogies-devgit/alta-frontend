@@ -1,0 +1,32 @@
+.contact-sec {
+    .contact-form {
+        border-radius: 8px;
+        border: 1px solid #CCCCCC;
+        padding: clamp(30px, 5vw, 50px);
+
+        .contact-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+    .contact-sec {
+        .contact-form {
+            .contact-buttons {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    }
+}

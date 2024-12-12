@@ -1,0 +1,31 @@
+.guide-sec {
+    .card {
+        padding: 6px;
+        background-color: transparent;
+
+        .content-wrapper{
+            padding: 8px;
+            position: relative;
+            .date-wrapper {
+                background-color: var(--primary);
+                color: white;
+                border-radius: 6px;
+                padding: 6px 16px;
+                text-align: center;
+                position: absolute;
+                right: 16px;
+                top: -30px;
+            }
+
+            .btn-arrow {
+                color: var(--primary);
+                font-family: "Neueplak-Semibold", sans-serif;
+                border-bottom: 1px solid var(--primary);
+                width: fit-content;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+        }
+    }
+}

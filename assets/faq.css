@@ -1,0 +1,94 @@
+.faq-sec .accordion .accordion-item {
+  margin-bottom: clamp(12px, 4vw, 20px);
+  border: 1px solid #C2CCDC;
+  border-radius: 8px;
+}
+.faq-sec .accordion .accordion-item:last-child {
+  margin-bottom: 0;
+}
+.faq-sec .accordion .accordion-item.active .accordion-header {
+  background-color: #EDF1FB;
+  border-radius: 8px 8px 0 0;
+}
+.faq-sec .accordion .accordion-item.active .accordion-header .icon .minus {
+  display: block;
+}
+.faq-sec .accordion .accordion-item.active .accordion-header .icon .plus {
+  display: none;
+}
+.faq-sec .accordion .accordion-item .accordion-header {
+  padding: 30px;
+  padding-right: 70px;
+  position: relative;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Neueplak-Semibold", sans-serif;
+  color: #2A2E23;
+  font-size: 22px;
+}
+.faq-sec .accordion .accordion-item .accordion-header .icon {
+  position: absolute;
+  top: calc(50% - 2px);
+  right: 30px;
+  transform: translate(0, -50%);
+  transition: 0.4s;
+  background-color: var(--primary);
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 40px;
+}
+.faq-sec .accordion .accordion-item .accordion-header .icon span {
+  padding-bottom: 10px;
+}
+.faq-sec .accordion .accordion-item .accordion-header .icon .minus {
+  display: none;
+}
+.faq-sec .accordion .accordion-item .accordion-header .icon:hover {
+  transform: translate(0, -50%) scale(1.1);
+}
+.faq-sec .accordion .accordion-item .accordion-content {
+  display: none;
+  padding: 30px;
+  padding-top: 0;
+  border-radius: 8px;
+}
+.faq-sec .accordion .accordion-item .accordion-content p {
+  color: #2A2E23;
+}
+.faq-sec .accordion .accordion-item .accordion-content p:last-child {
+  margin-bottom: 0;
+}
+.faq-sec .accordion .accordion-item .accordion-content.show {
+  background-color: #EDF1FB;
+  border-radius: 0 0 8px 8px;
+  display: block;
+}
+
+@media (max-width: 576px) {
+  .faq-sec .accordion .accordion-item .accordion-header {
+    font-size: 16px;
+    padding: 20px;
+    padding-right: 70px;
+  }
+  .faq-sec .accordion .accordion-item .accordion-header .icon {
+    width: 30px;
+    height: 30px;
+    font-size: 24px;
+  }
+  .faq-sec .accordion .accordion-item .accordion-header .icon span {
+    padding-bottom: 4px;
+    font-size: 20px;
+  }
+  .faq-sec .accordion .accordion-item .accordion-content {
+    padding: 20px;
+    padding-top: 0;
+  }
+  .faq-sec .accordion .accordion-item .accordion-content p {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=faq.css.map */

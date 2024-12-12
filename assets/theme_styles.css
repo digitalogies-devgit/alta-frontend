@@ -552,7 +552,7 @@ Needed for proper display in IE 10-.
 
 .font-neueplak-semibold {
   font-family: "Neueplak-Semibold", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .font-neueplak-text-bold {
@@ -1789,9 +1789,11 @@ Needed for proper display in IE 10-.
 }
 
 .card {
-  background-color: white;
-  border-radius: 12px;
-  padding: 40px 28px;
+  background-color: var(--primary-light-2);
+  border-radius: 8px;
+  padding: clamp(20px, 4vw, 30px) clamp(15px, 4vw, 25px);
+  border: 1px solid #BECEE7;
+  height: 100%;
 }
 .card.shadow {
   box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.08);
@@ -1840,17 +1842,22 @@ Needed for proper display in IE 10-.
   transition: 0.3s;
 }
 .input-wrapper .form-control {
-  border: 1px solid #676767;
+  border: 1px solid #C4C4C4;
   border-radius: 8px;
   width: 100%;
   outline: none;
   background-color: transparent;
   padding: 12px 17px;
-  margin-top: 5px;
+  margin-top: 8px;
   transition: 0.3s;
 }
 .input-wrapper .form-control:focus, .input-wrapper .form-control:hover {
   border-color: var(--primary);
+}
+.input-wrapper input::-webkit-outer-spin-button,
+.input-wrapper input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .underline {

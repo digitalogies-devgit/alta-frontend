@@ -1,0 +1,63 @@
+.networking-sec .content-wrapper {
+  position: relative;
+}
+.networking-sec .reviews-slider {
+  margin: 30px;
+}
+.networking-sec .reviews-slider .slick-prev {
+  left: -35px;
+}
+.networking-sec .reviews-slider .slick-prev::before {
+  transform: rotate(180deg);
+}
+.networking-sec .reviews-slider .slick-next {
+  right: -35px;
+}
+.networking-sec .reviews-slider .slick-arrow {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.networking-sec .reviews-slider .slick-arrow::before {
+  content: "";
+  background-image: url("./slick-arrow.svg");
+  background-position: center;
+  background-size: contain;
+  width: 13px;
+  height: 9px;
+  background-repeat: no-repeat;
+}
+.networking-sec .reviews-slider .slick-dots {
+  bottom: -35px;
+}
+.networking-sec .reviews-slider .slick-dots li.slick-active button {
+  opacity: 1;
+}
+.networking-sec .reviews-slider .slick-dots li button {
+  width: 9px;
+  height: 9px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  opacity: 0.5;
+}
+.networking-sec .reviews-slider .slick-dots li button::before {
+  content: "";
+  display: none;
+}
+.networking-sec .reviews-slider .slick-items .card {
+  background-color: white;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .networking-sec .reviews-slider {
+    margin: 0;
+  }
+  .networking-sec .reviews-slider .slick-items {
+    margin: 0 10px;
+  }
+}/*# sourceMappingURL=networking-sec.css.map */

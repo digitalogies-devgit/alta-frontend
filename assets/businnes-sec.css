@@ -1,0 +1,11 @@
+.business-sec .card {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.business-sec .card:hover {
+  background-color: var(--primary);
+  color: white;
+}
+.business-sec .card:hover img {
+  filter: brightness(0) invert(1);
+}/*# sourceMappingURL=businnes-sec.css.map */
