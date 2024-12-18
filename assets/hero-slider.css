@@ -1,0 +1,15 @@
+.hero-slider .slider-items .content-wrapper .list-icon li {
+  margin-bottom: 10px;
+  font-family: "Neueplak-Semibold", sans-serif;
+  padding-left: 30px;
+  position: relative;
+}
+.hero-slider .slider-items .content-wrapper .list-icon li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  background-image: url("./list-icon.svg");
+  width: 18px;
+  height: 16px;
+}/*# sourceMappingURL=hero-slider.css.map */
