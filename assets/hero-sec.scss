@@ -1,0 +1,15 @@
+.hero-sec {
+    .single-slider {
+        .slider-item {
+            background-position: center;
+            background-size: cover;
+            .content-wrapper {
+                max-width: 540px;
+                padding: clamp(40px, 7vw, 90px) 0;
+                .main-title {
+                    font-size: clamp(28px, 5vw, 48px);
+                }
+            }
+        }
+    }
+}

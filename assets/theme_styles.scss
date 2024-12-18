@@ -144,6 +144,10 @@
   font-weight: 700;
 }
 
+.text-primary {
+  color: var(--primary);
+}
+
 .bg-center-cover-norepeat {
   background-position: center;
   background-size: cover;
@@ -337,17 +341,17 @@
 }
 
 .list-with-icon {
-  gap: 10px;
-
   .list-item {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-
-    .icon-wrapper {
-      padding: 14px;
-      border-radius: 8px;
-      background-color: var(--primary-light);
+    position: relative;
+    padding-left: 26px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 16px;
+      left: 0;
+      top: 4px;
+      background-image: url('./list-icon.svg');
     }
   }
 }
