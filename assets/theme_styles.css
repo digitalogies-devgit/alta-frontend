@@ -1615,18 +1615,37 @@ Needed for proper display in IE 10-.
   position: relative;
 }
 
-.btn-outline {
+.btn-wrapper {
+  position: relative;
+}
+.btn-wrapper .btn-outline {
   color: var(--gray);
   border: 1px solid var(--gray);
 }
-.btn-outline:hover {
-  color: white;
-}
-.btn-outline:hover::before {
+.btn-wrapper .btn-outline:hover {
+  opacity: 0.85;
   filter: unset;
 }
-.btn-outline::before {
-  filter: invert(1);
+.btn-wrapper .btn-outline::before {
+  content: "Call Us Now!";
+  position: absolute;
+  left: 50%;
+  top: -12px;
+  background-color: white;
+  transform: translateX(-50%);
+  font-size: 14px;
+  z-index: 2;
+}
+
+.btn-arrow {
+  color: var(--primary);
+  font-family: "Neueplak-Semibold", sans-serif;
+  border-bottom: 1px solid var(--primary);
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 @media (max-width: 576px) {
@@ -1635,7 +1654,7 @@ Needed for proper display in IE 10-.
     padding: 12px 20px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 382px) {
   .btn {
     font-size: 16px;
     padding: 10px 16px;
@@ -1789,7 +1808,6 @@ Needed for proper display in IE 10-.
 }
 
 .card {
-  background-color: var(--primary-light-2);
   border-radius: 8px;
   padding: clamp(20px, 4vw, 30px) clamp(15px, 4vw, 25px);
   border: 1px solid #BECEE7;
@@ -1799,8 +1817,48 @@ Needed for proper display in IE 10-.
   box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.08);
 }
 
+.card-1 {
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid var(--gray-light);
+}
+.card-1 .content-wrapper {
+  padding: 18px;
+}
+.card-1 .content-wrapper .card-heading {
+  font-size: clamp(16px, 1vw, 20px);
+  font-family: "Neueplak-Text-Bold", sans-serif;
+}
+
+.card-2 {
+  border: 1px solid #BECEE7;
+  border-radius: 8px;
+  padding: 8px;
+}
+.card-2 .content-wrapper {
+  padding: 8px;
+  position: relative;
+}
+.card-2 .content-wrapper .date-wrapper {
+  background-color: var(--primary);
+  color: white;
+  border-radius: 6px;
+  padding: 6px 16px;
+  text-align: center;
+  position: absolute;
+  right: 16px;
+  top: -30px;
+}
+
 .default-sec .main-title {
   margin-bottom: clamp(22px, 6vw, 46px);
+}
+
+.half-sec.content-right .content-wrapper {
+  padding-left: 48px;
+}
+.half-sec.content-left .content-wrapper {
+  padding-right: 48px;
 }
 
 .main-title {
@@ -1969,6 +2027,20 @@ Needed for proper display in IE 10-.
   }
   .flex-lg-row {
     flex-direction: row;
+  }
+}
+@media (max-width: 991px) {
+  .order-lg-1 {
+    order: 1;
+  }
+  .order-lg-2 {
+    order: 2;
+  }
+  .half-sec.content-right .content-wrapper {
+    padding-left: 0;
+  }
+  .half-sec.content-left .content-wrapper {
+    padding-right: 0;
   }
 }
 @media (max-width: 767px) {

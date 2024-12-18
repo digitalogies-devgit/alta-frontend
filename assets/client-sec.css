@@ -1,0 +1,59 @@
+.client-sec {
+  background-color: var(--gray-light);
+}
+.client-sec .client-slider .slick-prev {
+  left: -30px;
+}
+.client-sec .client-slider .slick-prev::before {
+  transform: rotate(180deg);
+}
+.client-sec .client-slider .slick-next {
+  right: -30px;
+}
+.client-sec .client-slider .slick-arrow {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.client-sec .client-slider .slick-arrow::before {
+  content: "";
+  background: url("./slick-arrow.svg") center/contain no-repeat;
+  width: 13px;
+  height: 9px;
+}
+.client-sec .client-slider .slick-dots {
+  bottom: -30px;
+}
+.client-sec .client-slider .slick-dots li.slick-active button {
+  opacity: 1;
+}
+.client-sec .client-slider .slick-dots li button {
+  width: 9px;
+  height: 9px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  opacity: 0.5;
+}
+.client-sec .client-slider .slick-dots li button::before {
+  content: "";
+  display: none;
+}
+.client-sec .client-slider .slick-items {
+  padding: 5px;
+}
+.client-sec .client-slider .slick-items iframe {
+  border-radius: 10px;
+  width: 100%;
+  aspect-ratio: 16/9;
+  height: auto;
+}
+
+@media (max-width: 576px) {
+  .client-sec .client-slider .slick-items {
+    padding: 0;
+  }
+}/*# sourceMappingURL=client-sec.css.map */

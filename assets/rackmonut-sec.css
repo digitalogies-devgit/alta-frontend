@@ -1,0 +1,18 @@
+.rackmount-sec .model-card {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--primary-light);
+}
+.rackmount-sec .model-card span {
+  padding: 12px;
+  font-size: 18px;
+  font-family: "Neueplak-Text-Bold", sans-serif;
+}
+
+@media (max-width: 454px) {
+  .rackmount-sec .model-card span {
+    font-size: 15px;
+    padding: 6px;
+    font-family: "Neueplak-Semibold", sans-serif;
+  }
+}/*# sourceMappingURL=rackmonut-sec.css.map */

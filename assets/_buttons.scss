@@ -14,12 +14,15 @@
   position: relative;
   max-width: fit-content;
   font-family: "Neueplak-Text-Bold", sans-serif;
+
   &:hover {
     filter: brightness(.9);
+
     &::before {
       transform: translate(6px, -50%);
     }
   }
+
   &.btn-sm {
     padding: 12px 18px;
     font-size: 14px;
@@ -33,18 +36,38 @@
   position: relative;
 }
 
-.btn-outline {
-  color: var(--gray);
-  border: 1px solid var(--gray);
-  &:hover {
-    color: white;
-    &::before {
+.btn-wrapper {
+  position: relative;
+  .btn-outline {
+    color: var(--gray);
+    border: 1px solid var(--gray);
+
+    &:hover {
+      opacity: .85;
       filter: unset;
     }
+
+    &::before {
+      content: "Call Us Now!";
+      position: absolute;
+      left: 50%;
+      top: -12px;
+      background-color: white;
+      transform: translateX(-50%);
+      font-size: 14px;
+      z-index: 2;
+    }
   }
-  &::before {
-    filter: invert(1);
-  }
+}
+
+.btn-arrow {
+  color: var(--primary);
+  font-family: "Neueplak-Semibold", sans-serif;
+  border-bottom: 1px solid var(--primary);
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 @media (max-width: 576px) {
@@ -54,7 +77,7 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 382px) {
   .btn {
     font-size: 16px;
     padding: 10px 16px;
