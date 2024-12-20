@@ -98,9 +98,28 @@ jQuery(document).ready(function ($) {
     }
   });
 
+  $('.single-slider').slick({
+    dots: true,
+    arrows: true,
+    dots: true,
+    infinite: true,
+    speed: 1500,
+    fade: true,
+    cssEase: 'linear',
+    autoplay: true,
+    responsive: [
+      {
+        breakpoint: 1300,
+        settings: {
+          arrows: false,
+        }
+      }
+    ]
+  });
+
   $('.reviews-slider').slick({
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -117,6 +136,7 @@ jQuery(document).ready(function ($) {
   $('.client-slider').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
+    infinite: true,
     autoplay: true,
     autoplaySpeed: 2000,
     arrows: true,

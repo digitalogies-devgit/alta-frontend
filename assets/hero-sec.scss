@@ -1,15 +1,113 @@
 .hero-sec {
-    .single-slider {
+    .slider-full-width {
         .slider-item {
             background-position: center;
             background-size: cover;
-            .content-wrapper {
-                max-width: 540px;
+
+            .main-content {
+                position: relative;
+                z-index: 1;
+                padding: 0;
+                margin: 0;
                 padding: clamp(40px, 7vw, 90px) 0;
-                .main-title {
-                    font-size: clamp(28px, 5vw, 48px);
+
+                .content-wrapper {
+                    .main-title {
+                        font-size: clamp(28px, 5vw, 48px);
+                    }
+                }
+
+                .image-wrapper {
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    z-index: -1;
+                }
+            }
+        }
+
+        .slick-prev {
+            left: 15px;
+        }
+
+        .slick-next {
+            right: 15px;
+            transform: rotate(180deg);
+        }
+
+        .slick-arrow {
+            width: 40px;
+            height: 36px;
+            background: url('./hero-arrow.svg') center / cover no-repeat;
+            z-index: 99;
+
+            &::before {
+                content: '';
+            }
+        }
+
+        .slick-dots {
+            bottom: 15px;
+
+            li {
+                &.slick-active {
+                    button {
+                        opacity: 1;
+                    }
+                }
+
+                button {
+                    width: 9px;
+                    height: 9px;
+                    background-color: var(--primary);
+                    border-radius: 50%;
+                    opacity: .5;
+
+                    &::before {
+                        content: "";
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+
+@media (max-width:1180px) {
+    .hero-sec {
+        .slider-full-width {
+            .slider-item {
+                .main-content {
+                    .image-wrapper {
+                        opacity: .6;
+                    }
                 }
             }
         }
     }
+
+}
+
+@media (max-width:992px) {
+    .hero-sec {
+        .slider-full-width {
+            .slider-item {
+                .main-content {
+                    .image-wrapper {
+                        opacity: 1;
+                        position: unset;
+                        transform: unset;
+                    }
+                }
+            }
+
+            .slick-dots {
+                bottom: 8px;
+            }
+        }
+    }
+
 }

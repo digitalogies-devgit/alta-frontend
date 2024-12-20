@@ -1,1 +1,25 @@
-/*# sourceMappingURL=product-sec.css.map */
+.product-sec .product-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.product-sec .product-top .filter-btn {
+  background-color: var(--gray-light);
+  border-radius: 6px;
+  padding: 4px 12px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 18px;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: black;
+}
+.product-sec .product-top .select {
+  border-radius: 6px;
+  padding: 6px 6px;
+  outline: none;
+  border: 1px solid gray;
+}/*# sourceMappingURL=product-sec.css.map */

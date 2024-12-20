@@ -1471,7 +1471,7 @@ Needed for proper display in IE 10-.
   }
 }
 .footer {
-  background-color: var(--green-dark);
+  background-color: #112559;
 }
 .footer .footer-top {
   padding: clamp(45px, 7vw, 80px) 0;
@@ -1486,28 +1486,64 @@ Needed for proper display in IE 10-.
   transition: all 0.3s ease;
 }
 .footer .footer-top .footer-links li a:hover {
-  color: var(--primary);
+  color: var(--primary-light);
   padding-left: 5px;
 }
-.footer .footer-top .footer-social-icons {
+.footer .footer-top .footer-links-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer .footer-top .footer-links-1 li {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+}
+.footer .footer-top .footer-links-1 li a {
+  color: white;
+}
+.footer .footer-top .footer-social-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
 }
-.footer .footer-top .footer-social-icons .icon {
-  width: 42px;
-  height: 42px;
+.footer .footer-top .footer-social-links li {
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
-  border: 2px solid white;
+  border: 1px solid gray;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease-in-out;
 }
-.footer .footer-top .footer-social-icons .icon:hover {
+.footer .footer-top .footer-social-links li:hover {
   background-color: var(--primary);
   border-color: var(--primary);
+}
+.footer .footer-top .input-wrapper {
+  position: relative;
+}
+.footer .footer-top .input-wrapper::before {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url("./envelop-icon-1.svg") center/cover repeat;
+  width: 18px;
+  height: 13px;
+}
+.footer .footer-top .input-wrapper .input-control {
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+  padding: 12px;
+  padding-right: 40px;
+  color: white;
 }
 .footer .footer-bottom {
   position: relative;
@@ -1525,32 +1561,19 @@ Needed for proper display in IE 10-.
   height: 1px;
   background-color: rgba(255, 255, 255, 0.2392156863);
 }
-
-.cta {
-  background-color: #6D7E5C;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
+.footer .footer-bottom .bottom-links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
 }
-.cta::before, .cta::after {
-  content: "";
-  position: absolute;
-  width: 727px;
-  height: 378px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  z-index: -1;
+.footer .footer-bottom .bottom-links a {
+  display: block;
+  padding-right: 16px;
+  border-right: 1px solid white;
 }
-.cta::before {
-  top: -190px;
-  left: -365px;
-  background-image: url("/assets/img/cta-line-top.webp");
-}
-.cta::after {
-  bottom: -190px;
-  right: -365px;
-  background-image: url("/assets/img/cta-line-bottom.webp");
+.footer .footer-bottom .bottom-links a:nth-child(3) {
+  border-right: none;
+  padding-right: 0;
 }
 
 @media (max-width: 991px) {
@@ -1560,16 +1583,15 @@ Needed for proper display in IE 10-.
   .footer .footer-bottom {
     flex-direction: column;
     gap: 15px;
+    text-align: center;
   }
-}
-@media (max-width: 767px) {
-  .cta::before, .cta::after {
-    content: "";
-    position: absolute;
-    width: 727px;
-    height: 378px;
-    opacity: 0.7;
-    transform: scale(0.8);
+  .footer .footer-bottom .bottom-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer .footer-bottom .bottom-links a {
+    border-right: none;
+    padding-right: 0;
   }
 }
 @media (max-width: 575px) {
@@ -1607,6 +1629,11 @@ Needed for proper display in IE 10-.
   padding: 12px 18px;
   font-size: 14px;
   transition: 0.3s;
+}
+
+.btn-outline {
+  border: 2px solid black;
+  color: black;
 }
 
 .btn-primary {
@@ -1704,6 +1731,10 @@ Needed for proper display in IE 10-.
   text-align: start;
 }
 
+.text-white {
+  color: white;
+}
+
 .h-100 {
   height: 100%;
 }
@@ -1787,6 +1818,10 @@ Needed for proper display in IE 10-.
 
 .fs-20 {
   font-size: 20px;
+}
+
+.fs-22 {
+  font-size: 22px;
 }
 
 .fw-normal {
