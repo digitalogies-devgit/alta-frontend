@@ -3,16 +3,19 @@
   top: 0;
   z-index: 99999;
   background-color: white;
+
   .header-top {
     background-color: var(--gray-light);
     font-size: 14px;
     padding: 10px 0;
   }
+
   .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 9999;
+
     ul.menu {
       display: flex;
       gap: clamp(20px, 5vw, 40px);
@@ -33,6 +36,7 @@
           color: var(--navy-blue);
           text-transform: capitalize;
           position: relative;
+
           &:hover,
           &.active {
             color: var(--primary);
@@ -76,9 +80,6 @@
   }
 }
 
-// header area
-
-/* Hamburger menu styles */
 .hamburger-menu {
   display: none;
   cursor: pointer;
@@ -123,7 +124,7 @@
               max-width: 700px;
               max-height: 240px;
               overflow: auto;
-  
+
               >li {
                 width: 33.3%;
               }
@@ -135,7 +136,6 @@
   }
 }
 
-/* Responsive styles */
 @media only screen and (max-width: 992px) {
   .header {
 

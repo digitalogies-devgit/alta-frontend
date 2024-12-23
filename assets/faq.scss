@@ -16,7 +16,7 @@
 
                     .icon {
                         .minus {
-                            display: block;                        
+                            display: block;
                         }
 
                         .plus {
@@ -53,14 +53,14 @@
                     color: white;
                     font-size: 40px;
 
-                    span{
+                    span {
                         padding-bottom: 10px;
                     }
 
                     .minus {
                         display: none;
                     }
-                    
+
 
                     &:hover {
                         transform: translate(0, -50%) scale(1.1);
@@ -95,11 +95,6 @@
 
 
 
-
-
-
-
-
 @media (max-width:576px) {
     .faq-sec {
         .accordion {
@@ -114,16 +109,18 @@
                         height: 30px;
                         font-size: 24px;
 
-                        span{
+                        span {
                             padding-bottom: 4px;
                             font-size: 20px;
                         }
                     }
                 }
+
                 .accordion-content {
                     padding: 20px;
                     padding-top: 0;
-                    p{
+
+                    p {
                         font-size: 14px;
                     }
                 }
