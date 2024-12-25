@@ -1,13 +1,19 @@
-.contact-sec .contact-form {
+.contact-sec .contact-form,
+.contact-sec-1 .contact-form {
   border-radius: 8px;
   border: 1px solid #CCCCCC;
   padding: clamp(30px, 5vw, 50px);
 }
-.contact-sec .contact-form .contact-buttons {
+.contact-sec .contact-form .contact-buttons,
+.contact-sec-1 .contact-form .contact-buttons {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
+}
+.contact-sec .contact-form-1,
+.contact-sec-1 .contact-form-1 {
+  padding: 12px;
 }
 
 @media (max-width: 768px) {

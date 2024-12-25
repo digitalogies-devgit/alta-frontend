@@ -1759,7 +1759,7 @@ Needed for proper display in IE 10-.
 }
 
 .mb-0 {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 .mb-1 {
@@ -1882,6 +1882,26 @@ Needed for proper display in IE 10-.
   position: relative;
 }
 .card-2 .content-wrapper .date-wrapper {
+  background-color: var(--primary);
+  color: white;
+  border-radius: 6px;
+  padding: 6px 16px;
+  text-align: center;
+  position: absolute;
+  right: 16px;
+  top: -30px;
+}
+
+.card-3 {
+  border: 1px solid #BECEE7;
+  border-radius: 8px;
+  padding: 8px;
+}
+.card-3 .content-wrapper {
+  padding: 8px;
+  position: relative;
+}
+.card-3 .content-wrapper .date-wrapper {
   background-color: var(--primary);
   color: white;
   border-radius: 6px;
@@ -2089,6 +2109,9 @@ Needed for proper display in IE 10-.
   .underline::before {
     height: 4px;
     bottom: 4px;
+  }
+  .card-2 {
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 576px) {
