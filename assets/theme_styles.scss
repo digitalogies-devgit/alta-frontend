@@ -174,10 +174,16 @@
 .card-1 {
   overflow: hidden;
   border-radius: 8px;
-  border: 1px solid var(--gray-light);
+  border: 1px solid #C0C0C0;
 
   .content-wrapper {
     padding: 18px;
+
+    &.icon-box{
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
 
     .card-heading {
       font-size: clamp(16px, 1vw, 20px);
@@ -431,6 +437,8 @@
     order: 2;
   }
 
+
+
   .half-sec {
     &.content-right {
       .content-wrapper {
@@ -458,5 +466,13 @@
 @media (max-width: 576px) {
   .sec-badge {
     padding: 10px 14px;
+  }
+  .card-1{
+    .content-wrapper{
+      &.icon-box {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
   }
 }

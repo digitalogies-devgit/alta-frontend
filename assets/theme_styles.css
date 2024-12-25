@@ -87,7 +87,7 @@ p,
 ul.list-style-disc li,
 ol.list-style-decimal li,
 .list-style-check li {
-  color: var(--gray-2);
+  color: black;
   margin-top: 0;
   margin-bottom: 1rem;
   font-weight: 400;
@@ -1366,7 +1366,6 @@ Needed for proper display in IE 10-.
   color: var(--primary);
 }
 
-/* Hamburger menu styles */
 .hamburger-menu {
   display: none;
   cursor: pointer;
@@ -1407,7 +1406,6 @@ Needed for proper display in IE 10-.
     width: 33.3%;
   }
 }
-/* Responsive styles */
 @media only screen and (max-width: 992px) {
   .header .navbar ul.menu {
     display: none;
@@ -1859,10 +1857,15 @@ Needed for proper display in IE 10-.
 .card-1 {
   overflow: hidden;
   border-radius: 8px;
-  border: 1px solid var(--gray-light);
+  border: 1px solid #C0C0C0;
 }
 .card-1 .content-wrapper {
   padding: 18px;
+}
+.card-1 .content-wrapper.icon-box {
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 .card-1 .content-wrapper .card-heading {
   font-size: clamp(16px, 1vw, 20px);
@@ -2091,5 +2094,9 @@ Needed for proper display in IE 10-.
 @media (max-width: 576px) {
   .sec-badge {
     padding: 10px 14px;
+  }
+  .card-1 .content-wrapper.icon-box {
+    flex-direction: column;
+    text-align: center;
   }
 }/*# sourceMappingURL=theme_styles.css.map */

@@ -8,6 +8,10 @@
             background-color: var(--primary);
             color: white;
 
+            p{
+                color: white;
+            }
+
             img{
                 filter: brightness(0) invert(1);
             }

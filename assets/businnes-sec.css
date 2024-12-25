@@ -7,6 +7,9 @@
   background-color: var(--primary);
   color: white;
 }
+.business-sec .card:hover p {
+  color: white;
+}
 .business-sec .card:hover img {
   filter: brightness(0) invert(1);
 }/*# sourceMappingURL=businnes-sec.css.map */

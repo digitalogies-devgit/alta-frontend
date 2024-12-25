@@ -1,0 +1,41 @@
+.excess-sec .content-wrapper {
+  border-radius: 12px;
+  padding: clamp(25px, 6vw, 52px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  position: relative;
+  z-index: 2;
+}
+.excess-sec .content-wrapper .excess-img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+.excess-sec .content-wrapper .excess-img.excess-img-1 {
+  left: 20px;
+}
+.excess-sec .content-wrapper .excess-img.excess-img-2 {
+  right: 20px;
+}
+
+@media (max-width: 992px) {
+  .excess-sec .content-wrapper {
+    flex-direction: column;
+  }
+  .excess-sec .content-wrapper .excess-img {
+    opacity: 0.4;
+  }
+}
+@media (max-width: 768px) {
+  .excess-sec .content-wrapper .excess-img {
+    width: 180px;
+  }
+}
+@media (max-width: 768px) {
+  .excess-sec .content-wrapper .excess-img {
+    display: none;
+  }
+}/*# sourceMappingURL=excess-sec.css.map */
