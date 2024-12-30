@@ -218,6 +218,32 @@
   border-radius: 8px;
   padding: 8px;
 
+  .input-wrapper {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: url('./../assets/envelop-black.svg') center / cover repeat;
+        width: 18px;
+        height: 13px;
+    }
+
+    .input-control {
+        width: 100%;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+        padding: 12px;
+        padding-right: 40px;
+        color: white;
+    }
+}
+
   .content-wrapper{
     padding: 8px;
     position: relative;
@@ -480,6 +506,10 @@
       height: 4px;
       bottom: 4px;
     }
+  }
+  .card {
+    flex-direction: column;
+    text-align: center;
   }
   .card-2{
     flex-wrap: wrap;

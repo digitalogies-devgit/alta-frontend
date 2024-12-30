@@ -1,6 +1,7 @@
 .hero-sec .slider-full-width .slider-item {
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .hero-sec .slider-full-width .slider-item .main-content {
   position: relative;

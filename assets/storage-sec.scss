@@ -24,6 +24,7 @@
 
     .content-wrapper {
         position: relative;
+        transform: translate(-80px, 30px);
 
         &::after {
             content: "";
@@ -49,13 +50,7 @@
 }
 
 
-
-
-
-
-
-
-@media (max-width:992px) {
+@media (max-width:1180px) {
     .storage-sec {
         .image-wrapper {
             &::before{
@@ -66,10 +61,11 @@
             }
         }
         .content-wrapper {
+            transform: translate(0);
             .card {
                 transform: translate(0, 0);
                 padding: clamp(35px, 5vw, 45px) clamp(25px, 5vw, 35px);
-                box-shadow: 0px 0px 18px #00000014;
+                box-shadow: 2px 2px 16px #0000000b , -2px -2px 16px #0000000b;
             }
         }
     }

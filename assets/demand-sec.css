@@ -4,11 +4,11 @@
 .demand-sec .left-image-wrapper .content-wrapper {
   position: absolute;
   bottom: 32px;
-  left: 32px;
-  right: 32px;
+  left: 0;
+  right: 0;
 }
 .demand-sec .right-content-wrapper {
-  padding: 32px;
+  padding-top: 32px;
   background-color: var(--primary-light);
   height: 100%;
   position: relative;
@@ -42,11 +42,11 @@
     text-align: center;
     align-items: center;
   }
-  .demand-sec .right-content-wrapper .inner-content .content {
+  .demand-sec .right-content-wrapper .inner-content .content-wrapper {
     max-width: 580px;
     margin: 0 auto;
   }
-  .demand-sec .right-content-wrapper .inner-content .content .btn {
+  .demand-sec .right-content-wrapper .inner-content .content-wrapper .btn {
     display: block;
     margin: 0 auto;
   }

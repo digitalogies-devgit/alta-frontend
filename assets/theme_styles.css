@@ -1897,6 +1897,29 @@ Needed for proper display in IE 10-.
   border-radius: 8px;
   padding: 8px;
 }
+.card-3 .input-wrapper {
+  position: relative;
+}
+.card-3 .input-wrapper::before {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url("./../assets/envelop-black.svg") center/cover repeat;
+  width: 18px;
+  height: 13px;
+}
+.card-3 .input-wrapper .input-control {
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+  padding: 12px;
+  padding-right: 40px;
+  color: white;
+}
 .card-3 .content-wrapper {
   padding: 8px;
   position: relative;
@@ -2109,6 +2132,10 @@ Needed for proper display in IE 10-.
   .underline::before {
     height: 4px;
     bottom: 4px;
+  }
+  .card {
+    flex-direction: column;
+    text-align: center;
   }
   .card-2 {
     flex-wrap: wrap;

@@ -1,0 +1,38 @@
+.quote-form .input-wrapper {
+  position: relative;
+}
+.quote-form .input-wrapper::before {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+}
+.quote-form .input-wrapper .input-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #BFBFBF;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.2);
+  outline: none;
+  resize: vertical;
+  transition: all 0.2s ease-in-out;
+}
+.quote-form .input-wrapper .input-control:hover, .quote-form .input-wrapper .input-control:focus {
+  border-color: black;
+}
+.quote-form .input-wrapper-1::before {
+  background: url("./quote-profile-icon.svg") center/contain no-repeat;
+}
+.quote-form .input-wrapper-2::before {
+  background: url("./quote-envelop-icon.svg") center/contain no-repeat;
+}
+.quote-form .input-wrapper-3::before {
+  background: url("./quote-phone-icon.svg") center/contain no-repeat;
+}
+.quote-form .input-wrapper-4::before {
+  background: url("./quote-note-icon.svg") center/contain no-repeat;
+  top: 22px;
+}/*# sourceMappingURL=quote-form.css.map */

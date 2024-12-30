@@ -60,4 +60,7 @@
   .networking-sec .reviews-slider .slick-items {
     margin: 0 10px;
   }
+  .networking-sec .reviews-slider .slick-items .card {
+    text-align: left;
+  }
 }/*# sourceMappingURL=networking-sec.css.map */
