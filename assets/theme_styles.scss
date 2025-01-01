@@ -266,22 +266,6 @@
 
 }
 
-.half-sec {
-  &.content-right {
-    .content-wrapper {
-      padding-left: 48px;
-    }
-  }
-
-  &.content-left {
-    .content-wrapper {
-      padding-right: 48px;
-    }
-
-  }
-}
-
-
 .main-title {
   position: relative;
   z-index: 1;
@@ -481,22 +465,6 @@
 
   .order-lg-2 {
     order: 2;
-  }
-
-
-
-  .half-sec {
-    &.content-right {
-      .content-wrapper {
-        padding-left: 0;
-      }
-    }
-
-    &.content-left {
-      .content-wrapper {
-        padding-right: 0;
-      }
-    }
   }
 }
 

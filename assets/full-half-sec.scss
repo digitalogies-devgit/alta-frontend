@@ -1,4 +1,4 @@
-.demand-sec {
+.full-half-sec {
     .left-image-wrapper {
         position: relative;
         .content-wrapper{
@@ -24,7 +24,7 @@
 }
 
 @media (max-width:1180px) {
-    .demand-sec{
+    .full-half-sec{
         .right-content-wrapper{
             .image-wrapper{
                 opacity: .7;
@@ -33,7 +33,7 @@
     }
 }
 @media (max-width:992px) {
-    .demand-sec{
+    .full-half-sec{
         .left-image-wrapper{
             .content-wrapper{
                 bottom: 24px;
