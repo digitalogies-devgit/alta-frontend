@@ -98,6 +98,15 @@ jQuery(document).ready(function ($) {
     }
   });
 
+  $(".announcement-bar").slick({
+    autoplay: true,
+    infinite: true,
+    arrows: false,
+    dots: false,
+    slidesToScroll: 1,
+    slidesToShow: 1,  
+  });
+
   $(".brand-slider").slick({
     autoplay: true,
     infinite: true,
