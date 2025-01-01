@@ -98,6 +98,35 @@ jQuery(document).ready(function ($) {
     }
   });
 
+  $(".brand-slider").slick({
+    autoplay: true,
+    infinite: true,
+    arrows: false,
+    dots: false,
+    slidesToScroll: 1,
+    slidesToShow: 5,
+    responsive: [{
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 4
+      }
+
+    }, {
+
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 3
+      }
+
+    }, {
+
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 2
+      }
+    }]
+  });
+
   $('.single-slider').slick({
     dots: true,
     arrows: true,
