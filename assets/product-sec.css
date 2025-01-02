@@ -22,4 +22,41 @@
   padding: 6px 6px;
   outline: none;
   border: 1px solid gray;
+}
+.product-sec .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: clamp(10px, 2vw, 20px);
+}
+.product-sec .pagination li a {
+  border: 1px solid #323232;
+  width: 58px;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  color: #323232;
+  font-size: 20px;
+  transition: all 0.2s ease-in-out;
+}
+.product-sec .pagination li a.active {
+  background-color: var(--primary);
+  color: white;
+}
+.product-sec .pagination li a .pagination-arrow {
+  transition: all 0.2s ease-in-out;
+}
+.product-sec .pagination li a:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: white;
+}
+.product-sec .pagination li a:hover .pagination-arrow {
+  filter: invert(1) brightness(2);
+}
+.product-sec .pagination li:last-child {
+  transform: rotate(180deg);
 }/*# sourceMappingURL=product-sec.css.map */
