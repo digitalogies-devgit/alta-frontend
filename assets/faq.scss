@@ -91,6 +91,49 @@
             }
         }
     }
+
+    .accordion-s1 {
+        .accordion-item {
+            border: none;
+            border-bottom: 1px solid #C2CCDC;
+            border-radius: 0px;
+            margin-bottom: 0px;
+            .accordion-header {
+                display: flex;
+                gap: 16px;
+                align-items: center;
+                justify-content: space-between;
+                padding: 16px;
+
+                .title {
+                    font-size: 20px;
+                }
+
+                .arrow {
+                    transform: rotate(90deg);
+                    transition: all .2s ease-in-out;
+                }
+            }
+            .accordion-content{
+                padding: 16px;
+            }
+        }
+
+        .accordion-item {
+            &.active {
+                margin-bottom: 0;
+                .accordion-header {
+                    background-color: transparent;
+                    .arrow {
+                        transform: rotate(270deg);
+                    }
+                }
+                .accordion-content{
+                    background-color: transparent;
+                }
+            }
+        }
+    }
 }
 
 
@@ -123,6 +166,13 @@
                     p {
                         font-size: 14px;
                     }
+                }
+            }
+        }
+        .accordion-s1{
+            .accordion-item{
+                .accordion-header{
+                    padding: 16px;
                 }
             }
         }
