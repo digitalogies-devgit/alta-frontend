@@ -73,15 +73,24 @@
             <div class="row gy-lg-0 gy-3">
                 <div class="col-lg-6">
                     <div class="image-wrapper d-flex flex-column gap-2 align-items-center">
-                        <img style="max-width: 557px; border-radius: 14px;" src="./assets/products-img-1.webp"
-                            class="img-fluid mx-auto d-block" width="557" height="540" alt="products-image">
-                        <div class="d-flex flex-wrap gap-1">
-                            <img style="border-radius: 6px;" src="./assets/products-small-img-1.webp" width="88"
-                                height="88" alt="products-image">
-                            <img style="border-radius: 6px;" src="./assets/products-small-img-2.webp" width="88"
-                                height="88" alt="products-image">
-                            <img style="border-radius: 6px;" src="./assets/products-small-img-3.webp" width="88"
-                                height="88" alt="products-image">
+                        <div class="big-images">
+                            <img id="big-img-1" class="big-img img-fluid mx-auto d-block active"
+                                style="max-width: 557px; border-radius: 14px; display: none;"
+                                src="./assets/products-img-1.webp" width="557" height="540" alt="products-image">
+                            <img id="big-img-2" class="big-img img-fluid mx-auto d-block"
+                                style="max-width: 557px; border-radius: 14px; display: none;"
+                                src="./assets/products-img-2.webp" width="557" height="540" alt="products-image">
+                            <img id="big-img-3" class="big-img img-fluid mx-auto d-block"
+                                style="max-width: 557px; border-radius: 14px; display: none;"
+                                src="./assets/products-img-3.webp" width="557" height="540" alt="products-image">
+                        </div>
+                        <div class="small-images d-flex flex-wrap gap-1">
+                            <img id="small-img-1" class="small-img active" style="border-radius: 6px;"
+                                src="./assets/products-small-img-1.webp" width="88" height="88" alt="products-image">
+                            <img id="small-img-2" class="small-img" style="border-radius: 6px;"
+                                src="./assets/products-small-img-2.webp" width="88" height="88" alt="products-image">
+                            <img id="small-img-3" class="small-img" style="border-radius: 6px;"
+                                src="./assets/products-small-img-3.webp" width="88" height="88" alt="products-image">
                         </div>
                     </div>
                 </div>
@@ -118,10 +127,10 @@
                             <div>
                                 <span class="d-block mb-1">Quantity:</span>
                                 <div class="d-flex flex-wrap align-items-center gap-1">
-                                    <span class="minus text-primary">-</span>
+                                    <span class="minus fw-bold" style="cursor: pointer;">-</span>
                                     <span style="border-radius: 4px; padding: 2px 10px; border: 1px solid gray;"
-                                        class="quantity">01</span>
-                                    <span class="plus text-primary">+</span>
+                                        class="quantity fw-bold">1</span>
+                                    <span class="plus fw-bold" style="cursor: pointer;">+</span>
                                 </div>
                             </div>
                         </div>
@@ -477,17 +486,18 @@
     <section class="excess-sec pb-0">
         <div class="container">
             <div style="background-color: var(--primary-light);" class="content-wrapper">
-                    <img style="max-width: 316px;" src="./assets/excess-img-left.webp" class="img-fluid excess-img excess-img-1"
-                        width="255" height="213" alt="products-image-3">
+                <img style="max-width: 316px;" src="./assets/excess-img-left.webp"
+                    class="img-fluid excess-img excess-img-1" width="255" height="213" alt="products-image-3">
                 <div style="max-width: 590px;" class="mx-auto text-center">
                     <h2 class="main-title">Contact Us</h2>
-                    <p>Need help sizing an upgrade? Bulk Order? Custom Configuration or compatibility questions? Our expert product managers and engineers are ready to help.</p>
+                    <p>Need help sizing an upgrade? Bulk Order? Custom Configuration or compatibility questions? Our
+                        expert product managers and engineers are ready to help.</p>
                     <p class="font-neueplak-semibold">Contact Us or Email</p>
                     <a style="text-decoration: underline;" href="mailto:buyers@altatechnologies.com"
                         class="btn btn-primary d-block mx-auto">buyers@altatechnologies.com</a>
                 </div>
-                <img style="max-width: 187px;" src="./assets/excess-img-right.webp" class="img-fluid excess-img excess-img-2"
-                        width="187" height="253" alt="products-image-3">
+                <img style="max-width: 187px;" src="./assets/excess-img-right.webp"
+                    class="img-fluid excess-img excess-img-2" width="187" height="253" alt="products-image-3">
             </div>
         </div>
     </section>
@@ -619,6 +629,10 @@
     <script src="./assets/slick-min.js"></script>
     <script src="./assets/main.js"></script>
 
+    <script>
+       
+
+    </script>
 </body>
 
 </html

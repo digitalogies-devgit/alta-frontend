@@ -195,5 +195,35 @@ jQuery(document).ready(function ($) {
       },
     ]
   });
+
+    const bigImages = $(".big-img");
+    const smallImages = $(".small-img");
+
+    const setActive = (index) => {
+        bigImages.removeClass("active").hide().eq(index).addClass("active").show();
+        smallImages.removeClass("active").eq(index).addClass("active");
+    };
+
+    smallImages.each((index, img) => {
+        $(img).on("click", () => setActive(index));
+    });
+
+    setActive(0);
+
+  const basePrice = 29.99;
+
+  const update = (change) => {
+      const quantityElement = $(".quantity");
+      const priceElement = $(".products-price");
+      const quantity = Math.max(1, parseInt(quantityElement.text(), 10) + change);
+      quantityElement.text(quantity);
+      priceElement.text(`$${(basePrice * quantity).toFixed(2)} USD`);
+  };
+
+  $(".plus").click(() => update(1));
+  $(".minus").click(() => update(-1));
+  update(0);
+
+
 });
 
